@@ -1,4 +1,4 @@
-FROM nginx:stable
+FROM nginx:stable-bookworm-perl
 
 RUN apt-get update && apt-get install -y nginx-full \
 	&& rm -rf /var/lib/apt/lists/* \

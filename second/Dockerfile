@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y git &&\
 	git clone https://git.sr.ht/~cadence/NewLeaf /opt/second
 
-FROM python:buster
+FROM python:3.13.0a6-slim
 LABEL maintainer=heywoodlh
 
 ENV UID="1000"

@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.13.0a6-slim
 LABEL MAINTAINER=heywoodlh
 
 RUN git clone https://github.com/ytdl-org/youtube-dl /opt/youtube-dl \

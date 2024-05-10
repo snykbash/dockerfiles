@@ -1,4 +1,4 @@
-FROM python:3.13.0a6-slim AS build
+FROM python:3.13.0b1-slim AS build
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt update && apt install -y git \
@@ -6,7 +6,7 @@ RUN apt update && apt install -y git \
 
 RUN git clone https://github.com/byt3bl33d3r/SILENTTRINITY /opt/st
 
-FROM python:3.13.0a6-slim
+FROM python:3.13.0b1-slim
 LABEL maintainer=heywoodlh
 
 ENV DEBIAN_FRONTEND noninteractive
